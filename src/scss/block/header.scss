@@ -1,0 +1,97 @@
+.header {
+	&__navigation, .logo, .nav, .social, .nav__menu {
+		@extend %flex-element-center-vertical;
+	}
+
+	&__navigation {
+		padding: 12px 0;
+
+		.logo {
+			padding-right: 24px;
+			height: 42px;
+			border-right: 1px solid $line_gray;
+			@media (max-width: 1024px) {
+				border: none;
+				height: auto;
+				flex: 1 1 0;
+			}
+
+			&__title {
+				font-size: 29px;
+				font-weight: 500;
+
+				span {
+					font-weight: 600;
+				}
+
+				@media (max-width: 1024px) {
+					font-weight: 300;
+					span {
+						font-weight: 400;
+					}
+				}
+			}
+		}
+
+		.nav {
+			flex: 1 1 0;
+			padding: 0 24px;
+			@media (max-width: 1024px) {
+				display: none;
+			}
+
+			&__menu {
+				gap: 16px 40px;
+				@media (max-width: 1065px) {
+					gap: 16px 25px;
+				}
+
+				&__item {
+					&-link {
+						font-size: 16px;
+						line-height: 2;
+						display: inline-block;
+
+						&:after {
+							content: "";
+							display: block;
+							width: 0;
+							height: 2px;
+							background-color: $blue;
+							transition: width .3s ease-in 0s;
+						}
+
+						&:hover:after {
+							width: 100%;
+						}
+					}
+
+					.registration-btn {
+						font-size: 16px;
+						color: $blue;
+						border: 2px solid $blue;
+						min-width: 161px;
+						max-width: 250px;
+						padding: 7.2px;
+					}
+				}
+			}
+		}
+
+		.social {
+			gap: 0 18px;
+			@media (max-width: 1024px) {
+				display: none;
+			}
+
+			a {
+				display: inline-block;
+
+				img {
+					width: 26px;
+					height: 26px;
+				}
+			}
+		}
+	}
+}
