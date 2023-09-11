@@ -23,6 +23,7 @@ a, button {
 
 a {
 	text-decoration: none;
+	color: $dark_blue;
 }
 
 ul {
@@ -78,4 +79,9 @@ input:-webkit-autofill:focus {
 	background-color: $white !important;
 	-webkit-box-shadow: 0 0 0 0 inset;
 	transition: background-color 5000s ease-in-out 0s;
+}
+
+%flex-element-center-vertical{
+	display: flex;
+	align-items: center;
 }
