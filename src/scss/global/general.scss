@@ -42,6 +42,12 @@ img {
 	max-width: 1171px;
 	width: 100%;
 	margin: 0 auto;
+	@media (max-width: 1024px) {
+		padding: 0 27.5px;
+	}
+	@media (max-width: 576px) {
+		padding: 0 27.5px;
+	}
 }
 
 .section-title {
@@ -81,7 +87,7 @@ input:-webkit-autofill:focus {
 	transition: background-color 5000s ease-in-out 0s;
 }
 
-%flex-element-center-vertical{
+%flex-element-center-vertical {
 	display: flex;
 	align-items: center;
 }
