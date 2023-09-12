@@ -10,6 +10,11 @@ html, body {
 	height: 100%;
 }
 
+h1, h2, h3, h4, h5, h6, p, ul {
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	font-family: 'Helvetica Neue', sans-serif;
 	font-style: normal;
@@ -42,10 +47,7 @@ img {
 	max-width: 1171px;
 	width: 100%;
 	margin: 0 auto;
-	@media (max-width: 1024px) {
-		padding: 0 27.5px;
-	}
-	@media (max-width: 576px) {
+	@media (max-width: 1024px) and (min-width: 720px) {
 		padding: 0 27.5px;
 	}
 }
@@ -58,6 +60,10 @@ img {
 .subtitle {
 	font-size: 14px;
 	font-weight: 300;
+}
+
+.main-content {
+	background-color: $dark_blue;
 }
 
 button {
