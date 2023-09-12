@@ -84,7 +84,7 @@
 		</div>
 	</header>
 	<main class="main-content">
-		<section class="conference">
+		<section id="conference" class="conference">
 			<div class="container">
 				<div class="conference__content">
 					<div class="conference__text-info">
@@ -112,7 +112,7 @@
 					<div class="conference__img">
 						<img src="./assets/images/image.png" alt="conference image">
 					</div>
-					<button class="conference__registration-btn registration-btn">Зарегистрироваться</button>
+					<button class="button conference__registration-btn registration-btn">Зарегистрироваться</button>
 
 					<div class="conference__description">
 						<p class="conference__description-text">
@@ -132,10 +132,8 @@
 				</div>
 			</div>
 		</section>
-		<section class="speakers">
+		<section id="speakers" class="speakers">
 			<div class="container">
-
-
 				<div class="swiper">
 					<h2 class="section-title speakers__title">Спикеры</h2>
 					<div class="mySwiper">
@@ -243,6 +241,22 @@
 						<div class="swiper-button-prev"></div>
 						<div class="swiper-pagination"></div>
 					</div>
+				</div>
+			</div>
+		</section>
+		<section id="contact" class="contact">
+			<div class="container">
+				<div class="contact-wrapper">
+					<form action="#" class="form contact__form" id="form">
+						<h2 class="section-title form__title">Отправить сообщение</h2>
+						<input placeholder="Ваше имя" class="form__input" id="firstName" maxlength="25" name="first-name"
+									 type="text" inputmode="text">
+						<input placeholder="Email" class="form__input" id="email" maxlength="25" name="email" type="email"
+									 inputmode="email">
+						<textarea placeholder="Ваше сообщение" class="form__textarea" id="text" name="text"
+											inputmode="text"></textarea>
+						<button class="button form__button">Отправить</button>
+					</form>
 				</div>
 			</div>
 		</section>
