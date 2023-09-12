@@ -40,6 +40,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
+    "jquery": "^3.7.1",
     "swiper": "^10.2.0",
     "vivus": "^0.4.6"
   }
