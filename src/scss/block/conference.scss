@@ -239,6 +239,7 @@
 		align-items: center;
 		-webkit-animation: mover 1s infinite alternate;
 		animation: mover 1s infinite alternate;
+		cursor: pointer;
 		@media (max-width: 720px) {
 			display: none;
 		}
