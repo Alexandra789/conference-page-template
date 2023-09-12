@@ -1,0 +1,47 @@
+.footer {
+	background-color: $dark_blue;
+	padding-bottom: 160px;
+	@media (max-width: 1024px) {
+		padding-bottom: 90px;
+	}
+	@media (max-width: 720px) {
+		padding-bottom: 110px;
+	}
+
+	&-wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		a {
+			color: $white;
+		}
+	}
+
+	&__email {
+		font-size: 40px;
+		font-weight: 300;
+		line-height: 140%;
+		@media (max-width: 720px) {
+			font-size: 28px;
+		}
+	}
+
+	&__phone {
+		font-size: 32px;
+		font-weight: 300;
+		line-height: 140%;
+		margin-bottom: 17px;
+		@media (max-width: 720px) {
+			font-size: 22px;
+		}
+	}
+
+	&__info {
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 140%;
+		text-decoration-line: underline;
+	}
+}
