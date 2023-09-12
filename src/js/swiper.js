@@ -1,4 +1,4 @@
-const breakpoint = window.matchMedia('(min-width:720px)');
+const breakpoint = window.matchMedia('(min-width:576px)');
 let swiper;
 
 const breakpointChecker = function () {

@@ -10,6 +10,9 @@
 	}
 	@media (max-width: 720px) {
 		align-items: flex-start;
+		padding-bottom: 70px;
+	}
+	@media (max-width: 576px) {
 		padding-bottom: 130px;
 	}
 
@@ -58,8 +61,14 @@
 				padding-left: 15px;
 			}
 			@media (max-width: 720px) {
-				font-size: 16px;
+				font-size: 36px;
 				padding-left: 8px;
+			}
+			@media (max-width: 576px) {
+				font-size: 25px;
+			}
+			@media (max-width: 440px) {
+				font-size: 16px;
 			}
 		}
 	}
@@ -82,8 +91,14 @@
 			margin-bottom: 21px;
 		}
 		@media (max-width: 720px) {
-			font-size: 31px;
+			font-size: 75px;
 			margin-bottom: 15px;
+		}
+		@media (max-width: 576px) {
+			font-size: 40px;
+		}
+		@media (max-width: 440px) {
+			font-size: 31px;
 		}
 	}
 
@@ -112,9 +127,15 @@
 			font-size: 68px;
 		}
 		@media (max-width: 720px) {
-			font-size: 48px;
+			font-size: 97px;
 			letter-spacing: 2px;
 			margin-bottom: 10px;
+		}
+		@media (max-width: 576px) {
+			font-size: 70px;
+		}
+		@media (max-width: 440px) {
+			font-size: 48px;
 		}
 	}
 
@@ -135,8 +156,17 @@
 			gap: 0 13px;
 			max-width: 330px;
 		}
+		@media (max-width: 720px) {
+			max-width: 500px;
+		}
 		@media (max-width: 720px) and (min-width: 450px) {
 			margin-left: 75px;
+		}
+		@media (max-width: 576px) {
+			max-width: 500px;
+		}
+		@media (max-width: 440px) {
+			max-width: 330px;
 		}
 	}
 
@@ -164,8 +194,8 @@
 			grid-row-start: 2;
 			letter-spacing: 4px;
 			margin-top: 61px;
-			max-width: 279px;
 			margin-left: 0;
+			max-width: none;
 			padding: 27px 12px 26px;
 		}
 	}
@@ -186,9 +216,12 @@
 			justify-content: center;
 			flex-direction: column;
 			align-items: center;
-			max-width: 250px;
+			max-width: none;
 			grid-row-start: 4;
-			margin: 50px 0 0;
+			margin: 50px 0 73px;
+		}
+		@media (max-width: 576px) {
+			margin-bottom: 0;
 		}
 		@media (max-width: 340px) {
 			margin-left: 0;
@@ -240,7 +273,7 @@
 		-webkit-animation: mover 1s infinite alternate;
 		animation: mover 1s infinite alternate;
 		cursor: pointer;
-		@media (max-width: 720px) {
+		@media (max-width: 576px) {
 			display: none;
 		}
 
